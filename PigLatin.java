@@ -6,24 +6,28 @@ public class PigLatin {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String word = input.next();
-        String vowels = "aeiou";
-        String consonants = "";
         int len = word.length();
-        for (int x = 0; x < len; x++)
+        char firstLetter = word.charAt(0);
+        char secondLetter = word.charAt(1);
+        if (firstLetter == 'a' || firstLetter == 'e' || firstLetter == 'i' || firstLetter == 'o' || firstLetter == 'u')
         {
-            if ((word[0]).equals(vowels[x]))
-            {
-                System.out.println(word + "way");
-            }
+            System.out.println(word + "way");
         }
-        for (int i = 0; i < len; i++)
+        else if (secondLetter == 'a' || secondLetter == 'e' || secondLetter == 'i' || secondLetter == 'o' || secondLetter == 'u' || secondLetter == 'y')
         {
-            if (word[i].equals("a"))
+            for (int x = 1; x < len; x++)
             {
-                System.out.println("found a");
+                System.out.print(word.charAt(x));
             }
-            word.substring(i, i + 1); //up to but not including  i + 1
+            System.out.println(firstLetter + "ay");
         }
-        //word[i]
+        else
+        {
+            for (int i = 2; i < len; i++)
+            {
+                System.out.print(word.charAt(i));
+            }
+            System.out.println(firstLetter + secondLetter + "ay");
+        }
     }
 }

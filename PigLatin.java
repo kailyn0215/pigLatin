@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class PigLatin {
     public static void main(String[] args) {
+        System.out.print("Please enter a word to translate into Pig Latin: ");
         Scanner input = new Scanner(System.in);
         String word = input.next();
         int len = word.length();
@@ -27,7 +28,8 @@ public class PigLatin {
             {
                 System.out.print(word.charAt(i));
             }
-            System.out.println(firstLetter + secondLetter + "ay");
+            System.out.print(firstLetter);
+            System.out.println(secondLetter + "ay");
         }
     }
 }

@@ -11,6 +11,7 @@ public class PigLatin {
         int len = word.length(); // assigns len the length of the word
         char firstLetter = word.charAt(0); // assigns the char at position 1
         char secondLetter = word.charAt(1); // assigns at position 2
+        boolean capital = false;
 
         // if its a vowel
         if (firstLetter == 'a' || firstLetter == 'e' || firstLetter == 'i' || firstLetter == 'o' || firstLetter == 'u' || firstLetter == 'A' || firstLetter == 'E' || firstLetter == 'I' || firstLetter == 'O' || firstLetter == 'U')

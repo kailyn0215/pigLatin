@@ -1,4 +1,4 @@
-// Kailyn Brown 9/8/23 Pig Latin Assignment, finished 9/11/23 B)
+// Kailyn Brown 9/8/23 Pig Latin Assignment
 
 import java.util.Scanner;
 
@@ -40,3 +40,5 @@ public class PigLatin {
         }
     }
 }
+
+//if (word.charAt(y) == ' ') for later :D
